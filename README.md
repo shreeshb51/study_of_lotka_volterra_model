@@ -14,6 +14,7 @@ The Lotka-Volterra Predator-Prey Simulator is an interactive Python-based educat
 - [Algorithms/Mathematical Concepts Used](#algorithmsmathematical-concepts-used)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [Note](#note)
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -108,6 +109,11 @@ The simulator follows a structured process to model and analyze predator-prey dy
   - Equilibrium $(γ/δ, α/β)$: Neutrally Stable (Center).
 - **Cross-Correlation**: Peak at ~1/4 cycle lag, showing predators follow prey.
 
+### Sample User Interface
+| *Sample of Web UI* |
+|:--:| 
+| ![image](images/sample.png) |
+
 ## References
 - Lotka, A. J. (1925). *Elements of Physical Biology*. Williams & Wilkins.
 - Volterra, V. (1926). "Fluctuations in the Abundance of a Species considered Mathematically." *Nature*, 118, 558–560.
@@ -155,9 +161,13 @@ The simulator follows a structured process to model and analyze predator-prey dy
   - Gaussian filtering and peak detection for cross-correlation analysis.
 
 ## License
-This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
 - Inspired by classic ecological models by Lotka and Volterra.
 - Built using open-source libraries: NumPy, SciPy, Streamlit, and Plotly.
 - Thanks to the computational mathematics community for feedback on numerical methods.
+
+## Note
+| AI was used to generate most of the docstrings and inline comments in the code. |
+|:--:|
