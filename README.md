@@ -1,9 +1,11 @@
 # Study of Lotka Volterra Model
 
 ## Project Description
+
 The Lotka-Volterra Predator-Prey Simulator is an interactive Python-based educational tool designed to model and visualize the ecological dynamics between predator (whales) and prey (krill) populations using the Lotka-Volterra differential equations. Built with Streamlit, it provides an intuitive interface for users to adjust parameters, explore numerical methods, and analyze system stability, making it ideal for students and educators in computational mathematics and ecology.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -16,7 +18,10 @@ The Lotka-Volterra Predator-Prey Simulator is an interactive Python-based educat
 - [Acknowledgments](#acknowledgments)
 - [Note](#note)
 
+---
+
 ## Installation
+
 To set up the project locally, follow these steps:
 
 1. **Install Dependencies**:
@@ -45,6 +50,7 @@ To set up the project locally, follow these steps:
    The app uses MathJax for rendering mathematical equations. Ensure an internet connection for MathJax to load correctly, as it is sourced via CDN.
 
 ## Usage
+
 1. **Launch the App**:
    After installation, run the Streamlit app as described above. The app will open in your default web browser.
 
@@ -59,6 +65,7 @@ To set up the project locally, follow these steps:
    - Expand sections for detailed interpretations and mathematical references.
 
 ## Features
+
 - **Interactive Interface**: Streamlit-based app for real-time parameter adjustments and visualizations.
 - **Multiple Numerical Methods**: Implements Euler, RK4, and LSODA solvers for solving differential equations.
 - **Comprehensive Visualizations**: Includes population trajectories, phase portraits, direction fields, error analysis, cross-correlation, and eigenvalue plots.
@@ -67,6 +74,7 @@ To set up the project locally, follow these steps:
 - **Unit Tests**: Ensures reliability of core computations.
 
 ## Methodology
+
 The simulator follows a structured process to model and analyze predator-prey dynamics:
 
 1. **Initialization**:
@@ -95,13 +103,16 @@ The simulator follows a structured process to model and analyze predator-prey dy
    - Results are displayed in expandable Streamlit sections with detailed interpretations, enabling users to explore ecological and numerical insights.
 
 ## Examples
+
 ### Sample Input
+
 - **Scenario**: Baseline
 - **Parameters**: $α$ = 0.5, $β$ = 0.01, $δ$ = 0.001, $γ$ = 0.2
 - **Initial Conditions**: Krill = 200, Whales = 15
 - **Simulation Settings**: Duration = 100 years, Time Step = 0.1
 
 ### Sample Output
+
 - **Population Trajectories**: Oscillatory cycles with krill peaking before whales.
 - **Phase Portrait**: Closed orbits indicating neutral stability.
 - **Stability Analysis**:
@@ -110,17 +121,20 @@ The simulator follows a structured process to model and analyze predator-prey dy
 - **Cross-Correlation**: Peak at ~1/4 cycle lag, showing predators follow prey.
 
 ### Sample User Interface
+
 | *Sample of Web UI* |
 |:--:| 
 | ![image](images/sample.png) |
 
 ## References
+
 - Lotka, A. J. (1925). *Elements of Physical Biology*. Williams & Wilkins.
 - Volterra, V. (1926). "Fluctuations in the Abundance of a Species considered Mathematically." *Nature*, 118, 558–560.
 - Murray, J. D. (2002). *Mathematical Biology I: An Introduction*. Springer.
 - Press, W. H., et al. (2007). *Numerical Recipes: The Art of Scientific Computing*. Cambridge University Press.
 
 ## Dependencies
+
 - **Python**: 3.8+
 - **NumPy**: Array operations and mathematical computations.
 - **SciPy**: Numerical integration (solve_ivp, LSODA), eigenvalue analysis, and signal processing.
@@ -130,6 +144,7 @@ The simulator follows a structured process to model and analyze predator-prey dy
 - **MathJax**: LaTeX rendering for equations (loaded via CDN).
 
 ## Algorithms/Mathematical Concepts Used
+
 - **Lotka-Volterra Equations**:
   - Coupled nonlinear ODEs modeling predator-prey interactions:
     $\frac{dx}{dt} = \alpha x - \beta xy, \quad \frac{dy}{dt} = \delta xy - \gamma y$
@@ -161,13 +176,16 @@ The simulator follows a structured process to model and analyze predator-prey dy
   - Gaussian filtering and peak detection for cross-correlation analysis.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
+
 - Inspired by classic ecological models by Lotka and Volterra.
 - Built using open-source libraries: NumPy, SciPy, Streamlit, and Plotly.
 - Thanks to the computational mathematics community for feedback on numerical methods.
 
 ## Note
+
 | AI was used to generate most of the docstrings and inline comments in the code. |
 |:--:|
